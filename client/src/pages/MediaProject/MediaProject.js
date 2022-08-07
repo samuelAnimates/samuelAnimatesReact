@@ -20,7 +20,7 @@ class MediaProject extends Component {
 	}
 
 	projectInfo = {
-		title: "Writings",
+		title: "Media Coverage & Published Work",
 		synopsis:{
 			mediaType: "photo",
 			blurb: "A mix of research articles, interviews, and reviews.",
@@ -76,12 +76,12 @@ class MediaProject extends Component {
 
 	writingsListArtsTech = [
 		{
-			authors: "Narain J,	Ananthabhotla I, Mendez SR,	Taylor C, Siu HC, Brugnaro L, Mallozzi A",
+			authors: "Mendez SR",
 			id: "writingsList08",
-			lede: "Assistve Technology Hackathon",
-			link: "https://chi2020.acm.org/",
-			publisher: "Poster presented at: ACM CHI Conference on Human Factors in Computing Systems",
-			title: "ATHack: Co-Design and Education in Assistive Technology Development",
+			lede: "Assistve Technology Course",
+			link: "https://medium.com/immerse-now/centering-people-with-disabilities-in-engineering-373f827840dc",
+			publisher: "Immerse",
+			title: "Centering People with Disabilities in Engineering",
 			year: "2020"
 		},
 		{
@@ -123,7 +123,7 @@ class MediaProject extends Component {
 
 	]
 
-	writingsListHealth = [
+	writingsListResearchArticles = [
 		{
 			authors: "Linton A, Mendez SR, Simon MA",
 			id: "writingsList06",
@@ -154,7 +154,7 @@ class MediaProject extends Component {
 
 	]
 
-	writingNavbarLinks = [{title:"Synopsis", id:"writingNavBarLinkSynopsis"},{title:"Highlights", id:"writingNavBarLinkHighlights"},{title:"Overview", id:"writingNavBarLinkOverview"},{title:"The Writings", id:"writingNavBarLinkWritingsContainer"}];
+	writingNavbarLinks = [{title:"Synopsis", id:"writingNavBarLinkSynopsis"},{title:"Highlights", id:"writingNavBarLinkHighlights"},{title:"Overview", id:"writingNavBarLinkOverview"},{title:"The Stuff", id:"writingNavBarLinkWritingsContainer"}];
 	writingSynopsisSectionRef = React.createRef();
 	writingHighlightsSectionRef = React.createRef();
 	writingNavbarRef = React.createRef();
@@ -229,7 +229,7 @@ class MediaProject extends Component {
 							<GenericFloatingSection colorSchemeSuffix={ this.props.colorSchemeSuffix }>
 								<div className={ "color-inherit paddng-bottom-1em paddng-left-1em paddng-right-1em paddng-top-1em text-center mediaProjectPageOverview-color-scheme-" + this.props.colorSchemeSuffix }> 
 									<div>
-										<h2 tabIndex="0" ref={ this.MediaContainerRef }>The Media!</h2>
+										<h2 tabIndex="0" ref={ this.MediaContainerRef }>The Stuff!</h2>
 									</div>
 									<div className="padding-bottom-p5em padding-top-p5em text-left">
 										<div className="display-flex flex-direction-column padding-bottom-p25em padding-left-p5em padding-right-p5em padding-top-p25em">
@@ -251,7 +251,7 @@ class MediaProject extends Component {
 												</li>
 											)}
 											</ul>
-											<h3 className=" padding-top-p5em text-center">Writing: Arts & Tech</h3>
+											<h3 className=" padding-top-p5em text-center">My Writing: Arts & Tech</h3>
 											<ul className="list-style-type-none list-style-position-outside padding-left-1em padding-bottom-1em">
 											{ this.writingsListArtsTech.map(writing =>
 												<li className="padding-bottom-p25em padding-top-p25em text-indent-neg1p7em">
@@ -269,9 +269,9 @@ class MediaProject extends Component {
 												</li>
 											)}
 											</ul>
-											<h3 className="padding-top-p5em text-center">Writing: Health</h3>
+											<h3 className="padding-top-p5em text-center">My Work: Research Articles</h3>
 											<ul className="list-style-type-none padding-left-1em">
-											{ this.writingsListHealth.map(writing =>
+											{ this.writingsListResearchArticles.map(writing =>
 												<li className="padding-bottom-p25em padding-top-p25em text-indent-neg1p7em">
 													<WritingItem
 														authors={ writing.authors }

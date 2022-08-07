@@ -8,14 +8,12 @@ import MenuBarMobile from '../../components/MenuBarMobile';
 import NewPageNavBar from '../../components/NewPageNavBar';
 import NewPageNavBarMobile from '../../components/NewPageNavBarMobile';
 import AbstractProject from "../../pages/AbstractProject";
-import AfterProject from "../../pages/AfterProject";
 import BodegaProject from "../../pages/BodegaProject";
 import BreakfastProject from "../../pages/BreakfastProject";
 import BusanProject from "../../pages/BusanProject";
 import DotsProject from "../../pages/DotsProject";
 import HealthforallProject from "../../pages/HealthforallProject";
 import HerProject from "../../pages/HerProject";
-import HernandezProject from "../../pages/HernandezProject";
 import JolietProject from "../../pages/JolietProject";
 import LmhtfProject from "../../pages/LmhtfProject";
 import MediaProject from "../../pages/MediaProject";
@@ -24,8 +22,6 @@ import SaigonProject from "../../pages/SaigonProject";
 import TarotProject from "../../pages/TarotProject";
 import UnfundableProject from "../../pages/UnfundableProject";
 import WalksProject from "../../pages/WalksProject";
-import WhyuProject from "../../pages/WhyuProject";
-import WikiProject from "../../pages/WikiProject";
 
 class ProjectsPageSkeleton extends Component {
 
@@ -99,18 +95,6 @@ class ProjectsPageSkeleton extends Component {
 										responsiveWidth={ this.props.responsiveWidth }
 									/>
 								)}/>
-								<Route exact path='/projects/after' render={props => (
-									<AfterProject
-										colorSchemeNameRoot="filmProjectPage-color-scheme-"
-										colorSchemeSuffix={ this.props.colorSchemeSuffix }
-										doNotTrack={ this.props.doNotTrack }
-										fontSizeLevel={ this.props.fontSizeLevel }
-										isMobileView={ this.props.isMobileView }
-										materialIconFill={ this.props.materialIconFill }
-										responsiveFlexEnding={ this.props.responsiveFlexEnding }
-										responsiveWidth={ this.props.responsiveWidth }
-									/>
-								)}/>
 								<Route exact path='/projects/bodega' render={props => (
 									<BodegaProject
 										colorSchemeNameRoot="filmProjectPage-color-scheme-"
@@ -173,18 +157,6 @@ class ProjectsPageSkeleton extends Component {
 								<Route exact path='/projects/her' render={props => (
 									<HerProject
 										colorSchemeNameRoot="artProjectPage-color-scheme-"
-										colorSchemeSuffix={ this.props.colorSchemeSuffix }
-										doNotTrack={ this.props.doNotTrack }
-										fontSizeLevel={ this.props.fontSizeLevel }
-										isMobileView={ this.props.isMobileView }
-										materialIconFill={ this.props.materialIconFill }
-										responsiveFlexEnding={ this.props.responsiveFlexEnding }
-										responsiveWidth={ this.props.responsiveWidth }
-									/>
-								)}/>
-								<Route exact path='/projects/hernandez' render={props => (
-									<HernandezProject
-										colorSchemeNameRoot="filmProjectPage-color-scheme-"
 										colorSchemeSuffix={ this.props.colorSchemeSuffix }
 										doNotTrack={ this.props.doNotTrack }
 										fontSizeLevel={ this.props.fontSizeLevel }
@@ -280,30 +252,6 @@ class ProjectsPageSkeleton extends Component {
 								<Route exact path='/projects/walks' render={props => (
 									<WalksProject
 										colorSchemeNameRoot="artProjectPage-color-scheme-"
-										colorSchemeSuffix={ this.props.colorSchemeSuffix }
-										doNotTrack={ this.props.doNotTrack }
-										fontSizeLevel={ this.props.fontSizeLevel }
-										isMobileView={ this.props.isMobileView }
-										materialIconFill={ this.props.materialIconFill }
-										responsiveFlexEnding={ this.props.responsiveFlexEnding }
-										responsiveWidth={ this.props.responsiveWidth }
-									/>
-								)}/>
-								<Route exact path='/projects/whyu' render={props => (
-									<WhyuProject
-										colorSchemeNameRoot="videoProjectPage-color-scheme-"
-										colorSchemeSuffix={ this.props.colorSchemeSuffix }
-										doNotTrack={ this.props.doNotTrack }
-										fontSizeLevel={ this.props.fontSizeLevel }
-										isMobileView={ this.props.isMobileView }
-										materialIconFill={ this.props.materialIconFill }
-										responsiveFlexEnding={ this.props.responsiveFlexEnding }
-										responsiveWidth={ this.props.responsiveWidth }
-									/>
-								)}/>
-								<Route exact path='/projects/wiki' render={props => (
-									<WikiProject
-										colorSchemeNameRoot="webProjectPage-color-scheme-"
 										colorSchemeSuffix={ this.props.colorSchemeSuffix }
 										doNotTrack={ this.props.doNotTrack }
 										fontSizeLevel={ this.props.fontSizeLevel }

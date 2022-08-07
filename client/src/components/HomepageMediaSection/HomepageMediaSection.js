@@ -9,7 +9,7 @@ const HomepageMediaSection = React.forwardRef((props, ref) => (
 	<GenericFloatingSection colorSchemeSuffix={ props.colorSchemeSuffix }>
 		<div className={ "homepageMediaSection-color-scheme-" + props.colorSchemeSuffix + " color-inherit padding-left-p5em padding-right-p5em"}>
 			<SheerWhiteContainer colorSchemeSuffix={ props.colorSchemeSuffix }>
-				<h2 tabIndex="0" className="text-center" ref={ ref }>Media</h2>
+				<h2 tabIndex="0" className="text-center" ref={ ref }>Media Coverage & Published Work</h2>
 			</SheerWhiteContainer>
 			<div className="display-flex flex-direction-column padding-bottom-1em padding-left-p5em padding-right-p5em padding-top-1em">
 				<p>Here's a mix of my writing, co-authored work, and media coverage of my projects:</p>
@@ -47,7 +47,7 @@ const HomepageMediaSection = React.forwardRef((props, ref) => (
 					<LinkContainerWithGenericIcon>
 						<InlineA
 							isInternalLink={ true }	
-							text={ "See more media coverage and writing." }
+							text={ "See more media coverage and published work." }
 							urlPath={ "/projects/media" }
 							colorSchemeSuffix ={ props.colorSchemeSuffix }
 						/>

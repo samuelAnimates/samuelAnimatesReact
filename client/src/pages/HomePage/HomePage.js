@@ -15,7 +15,7 @@ class HomePage extends Component {
 	state = { 
 		navbarClassName: "margin-auto margin-bottom-2em",
 		navbarLinksClassName: "float-left font-size-p85em padding-left-0 text-center",
-		navbarLinks: [{title:"About", id:"navBarLinkAbout"},{title:"Highlights", id:"navBarLinkHighlights"},{title:"Media", id:"navBarLinkMedia"},{title:"Animation", id:"navBarLinkAnimation"},{title:"Edu", id:"navBarLinkEdu"},{title:"Web", id:"navBarLinkWeb"},{title:"Video", id:"navBarLinkVideo"},{title:"Art", id:"navBarLinkArt"}]
+		navbarLinks: [{title:"About", id:"navBarLinkAbout"},{title:"Highlights", id:"navBarLinkHighlights"},{title:"Media", id:"navBarLinkMedia"},{title:"Web", id:"navBarLinkWeb"},{title:"Video", id:"navBarLinkVideo"},{title:"Art", id:"navBarLinkArt"}]
 	};
 
 	projectData = { 
@@ -26,13 +26,13 @@ class HomePage extends Component {
 					id: "aboutMeParagraph01",
 					lead: "In short",
 					includesLink: false,
-					body: "I make animations. I'm a community-based researcher. I do front end web development, with an eye on web accessibility. I see the privilege of having chances to gain these skills; I want to use these chances to open up more seats at the table."
+					body: "I make art. I do research. I can make things with code sometimes. I see the privilege of having chances to gain these skills. I want to use these chances to open up more seats at the table."
 				},
 				{	
 					id: "aboutMeParagraph02",
 					lead: "Interests",
 					includesLink: false,
-					body: "community-based research, public health, digital documentary, visual art, nail polish."
+					body: "media arts, health communication, health equity, culture and technology"
 				},
 				{	
 					id: "aboutMeParagraph03",
@@ -42,8 +42,8 @@ class HomePage extends Component {
 						{
 							preLinkText: "Right now, it's ",
 							linkIsInternalLink: false,
-							linkText: `"XS"`,
-							linkUrl: "https://www.youtube.com/watch?v=TO2c06p6m5w",
+							linkText: `"Hold the Girl"`,
+							linkUrl: "https://youtu.be/ikkfuGeAfYg",
 							postLinkText: " by Rina Sawayama.",
 						}
 					]
@@ -53,67 +53,29 @@ class HomePage extends Component {
 				{
 					"isInternalLink": false,
 					"id": "aboutLink01",
-					"text": "My CV as a Published Google Doc",
+					"text": "My Open Scholar Profile",
 					"icon": "document",
-					"path": "https://docs.google.com/document/d/e/2PACX-1vSMS4XleOQlHUDp5mbn00Z29u8Pbg3EhHyVDzDJag1cWMi6uTh6vCOnqk6BYG7L16BAlchdHuvuq5zb/pub"
+					"path": "https://scholar.harvard.edu/smendez"
 				},
 				{
 					"isInternalLink": false,
 					"id": "aboutLink02",
-					"text": "My Vimeo Profile",
-					"icon": "video",
-					"path": "https://www.vimeo.com/user15152945"
-				},
-				{
-					"isInternalLink": false,
-					"id": "aboutLink03",
 					"text": "My GitHub Profile",
 					"icon": "code",
 					"path": "https://github.com/smendez92"
 				},
 				{
 					"isInternalLink": false,
-					"id": "aboutLink04",
-					"text": "My LinkedIn Profile",
-					"icon": "accountCircle",
-					"path": "https://www.linkedin.com/in/samuel-r-mendez/"
-				},
+					"id": "aboutLink02",
+					"text": "My Twitch Channel",
+					"icon": "video",
+					"path": "https://www.twitch.tv/samuelanimates"
+				}
 			]
 		},
 		highlightsSection: {
 			id: "HIGHLIGHTS",
 			projects:	[
-				{
-					"id": "highlights01",
-					"title": "Abstract",
-					"description": "A livestream performance of my master's thesis, on public health communication. (Emoji designed by OpenMoji. License: CC BY-SA 4.0)",
-					"icon": "./assets/images/homepageIcons/homepage-icon-abstract.svg",
-					"iconAlt": "'Abstract' logo: sparkle emoji.",
-					"projectPagePath": "/projects/abstract",
-					"links": [
-						{
-							"isInternalLink": false,
-							"id": "highlights0101",
-							"text": "'Abstract' Video on Vimeo",
-							"path": "https://vimeo.com/410859161",
-							"icon": "video"
-						},
-						{
-							"isInternalLink": false,
-							"id": "highlights0102",
-							"text": "'Abstact' interactive script (note: a11y issues)",
-							"path": "https://abstract-prod.herokuapp.com/",
-							"icon": "website"
-						},
-						{
-							"isInternalLink": false,
-							"id": "highlights0103",
-							"text": "'Abstract' script as a published Google Doc",
-							"path": "https://docs.google.com/document/d/e/2PACX-1vR1ranb_nwblA8zJu8qqIkMSsS3PeQpSzXukuC5iEf6QTEI_ValdQZvYyTiMu_3nPS5ezJmMiT1mW9n/pub",
-							"icon": "document"
-						}
-					]
-				},
 				{
 					"id": "highlights02",
 					"title": "HER Communication",
@@ -199,23 +161,101 @@ class HomePage extends Component {
 		},
 		projectSections: [
 			{
-				"title": "Animated Films",
-				"id": "animationSection",
+				"title": "Web",
+				"id": "webSection",
 				"projects": [
 					{
-						"id": "animation01",
-						"title": "No One Can Hear You",
-						"description": "A mixed-media animation: the memories of Officer Hernández, an astronaut losing contact with her crewmates and drifting off into space.",
-						"icon": "./assets/images/homepageIcons/homepage-icon-hernandez.svg",
+						"id": "web01",
+						"title": "Health for All",
+						"icon": "./assets/images/homepageIcons/homepage-icon-nlm.svg",
 						"iconAlt": "",
-						"projectPagePath": "/projects/hernandez",
+						"description": "Clinical trial informational tool I did lo-fi prototying and user testing for.",
+						"projectPagePath": "/projects/healthforall",
 						"links": [
 							{
 								"isInternalLink": false,
-								"id": "animation0102",
-								"text": "'No One Can Hear You' excerpt on Vimeo",
+								"id": "health0101",
+								"text": "Health for All website",
+								"icon": "website",
+								"path": "https://healthforallproject.org/"
+							}
+						]
+					},
+					{
+						"id": "web02",
+						"title": "AR-Tarot",
+						"icon": "./assets/images/homepageIcons/homepage-icon-tarot.svg",
+						"iconAlt": "",
+						"description": "An online tarot reading utilizing A-frame to embed an augmented reality display.",
+						"projectPagePath": "/projects/tarot",
+						"links": [
+							{
+								"isInternalLink": false,
+								"id": "web0202",
+								"text": "'AR-Tarot' GitHub Repo",
+								"icon": "code",
+								"path": "https://github.com/smendez92/AR-tarot"
+							},
+							{
+								"isInternalLink": false,
+								"id": "web0203",
+								"text": "'AR-Tarot' Demo on GitHub Pages",
+								"icon": "website",
+								"path": "https://smendez92.github.io/AR-tarot/index"
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "Video and Animation",
+				"id": "videoSection",
+				"projects": [
+					{
+						"id": "video01",
+						"title": "10 Days in Saigon",
+						"description": "A 10-week web series documenting wheelchair travel in Ho Chi Minh City, Vietnam.",
+						"icon": "./assets/images/homepageIcons/homepage-icon-saigon.svg",
+						"iconAlt": "'10 Days' logo: three overlayed Accessible Icons, suggesting fast forward movement.",
+						"projectPagePath": "/projects/saigon",
+						"links": [
+							{
+								"isInternalLink": false,
+								"id": "highlights0102",
+								"text": "'10 Days' Trailer on Facebook",
 								"icon": "video",
-								"path": "http://www.vimeo.com/233932687"
+								"path": "https://www.facebook.com/wearemuui/videos/1834490626823232/"
+							},
+							{
+								"isInternalLink": false,
+								"id": "highlights0103",
+								"text": "'10 Days' Google Map",
+								"icon": "map",
+								"path": "https://www.google.com/maps/d/viewer?mid=1msCQD_ab_Lz6mLz80wyu1qHXCBk&hl=en_US&ll=10.798291852220926%2C106.67387433398437&z=13"
+							},
+							{
+								"isInternalLink": false,
+								"id": "highlights0104",
+								"text": "'10 Days' Article",
+								"icon": "website",
+								"path": "https://www.giantrobot.media/stories/2017/5/30/muui"
+							}
+						]
+					},
+					{
+						"id": "video02",
+						"title": "Spanish Community Center (SCC) Promo Video",
+						"icon": "./assets/images/homepageIcons/homepage-icon-joliet.svg",
+						"iconAlt": "",
+						"description": "A promotional video for the Spanish Community Center in Joliet.",
+						"projectPagePath": "/projects/joliet",
+						"links": [
+							{
+								"isInternalLink": false,
+								"id": "video0102",
+								"text": "SCC Promo Video on Vimeo",
+								"icon": "video",
+								"path": "http://www.vimeo.com/221224584"
 							}
 						]
 					},
@@ -274,190 +314,42 @@ class HomePage extends Component {
 				]
 			},
 			{
-				"title": "Education",
-				"id": "eduSection",
-				"projects": [
-					{
-						"id": "edu01",
-						"title": "Health for All",
-						"icon": "./assets/images/homepageIcons/homepage-icon-nlm.svg",
-						"iconAlt": "",
-						"description": "Clinical trial informational tool I did lo-fi prototying and user testing for.",
-						"projectPagePath": "/projects/healthforall",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "health0101",
-								"text": "Health for All website",
-								"icon": "website",
-								"path": "https://healthforallproject.org/"
-							}
-						]
-					},
-				]
-			},
-			{
-				"title": "Web Development",
-				"id": "webSection",
-				"projects": [
-					{
-						"id": "web01",
-						"title": "Wheelchair Travel A11Y Wiki",
-						"description": "Proof-of-Concept demo of a wheelchair travel accessibility (A11Y) wiki.",
-						"icon": "./assets/images/homepageIcons/homepage-icon-wiki.svg",
-						"iconAlt": "'A11Y Wiki' logo: a spinning gear/flower made up of geometric shapes.",
-						"projectPagePath": "/projects/wiki",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "web0102",
-								"text": "'A11Y Wiki' GitHub Repo",
-								"path": "https://github.com/smendez92/wheelchairWiki",
-								"icon": "code"
-							},
-							{
-								"isInternalLink": false,
-								"id": "web0104",
-								"text": "'A11Y Wiki' Demo on Heroku",
-								"path": "https://wheelchairtravelwiki.herokuapp.com",
-								"icon": "website"
-							}
-						]
-					},
-					{
-						"id": "web02",
-						"title": "AR-Tarot",
-						"icon": "./assets/images/homepageIcons/homepage-icon-tarot.svg",
-						"iconAlt": "",
-						"description": "An online tarot reading utilizing A-frame to embed an augmented reality display.",
-						"projectPagePath": "/projects/tarot",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "web0202",
-								"text": "'AR-Tarot' GitHub Repo",
-								"icon": "code",
-								"path": "https://github.com/smendez92/AR-tarot"
-							},
-							{
-								"isInternalLink": false,
-								"id": "web0203",
-								"text": "'AR-Tarot' Demo on GitHub Pages",
-								"icon": "website",
-								"path": "https://smendez92.github.io/AR-tarot/index"
-							}
-						]
-					}
-				]
-			},
-			{
-				"title": "Video",
-				"id": "videoSection",
-				"projects": [
-					{
-						"id": "video01",
-						"title": "10 Days in Saigon",
-						"description": "A 10-week web series documenting wheelchair travel in Ho Chi Minh City, Vietnam.",
-						"icon": "./assets/images/homepageIcons/homepage-icon-saigon.svg",
-						"iconAlt": "'10 Days' logo: three overlayed Accessible Icons, suggesting fast forward movement.",
-						"projectPagePath": "/projects/saigon",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "highlights0102",
-								"text": "'10 Days' Trailer on Facebook",
-								"icon": "video",
-								"path": "https://www.facebook.com/wearemuui/videos/1834490626823232/"
-							},
-							{
-								"isInternalLink": false,
-								"id": "highlights0103",
-								"text": "'10 Days' Google Map",
-								"icon": "map",
-								"path": "https://www.google.com/maps/d/viewer?mid=1msCQD_ab_Lz6mLz80wyu1qHXCBk&hl=en_US&ll=10.798291852220926%2C106.67387433398437&z=13"
-							},
-							{
-								"isInternalLink": false,
-								"id": "highlights0104",
-								"text": "'10 Days' Article",
-								"icon": "website",
-								"path": "https://www.giantrobot.media/stories/2017/5/30/muui"
-							}
-						]
-					},
-					{
-						"id": "video02",
-						"title": "Spanish Community Center (SCC) Promo Video",
-						"icon": "./assets/images/homepageIcons/homepage-icon-joliet.svg",
-						"iconAlt": "",
-						"description": "A promotional video for the Spanish Community Center in Joliet.",
-						"projectPagePath": "/projects/joliet",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "video0102",
-								"text": "SCC Promo Video on Vimeo",
-								"icon": "video",
-								"path": "http://www.vimeo.com/221224584"
-							}
-						]
-					},
-					{
-						"id": "video03",
-						"title": "WhyUEdu Info Series",
-						"icon": "./assets/images/homepageIcons/homepage-icon-whyu.svg",
-						"iconAlt": "",
-						"description": "2 sets of informational videos & worksheets on aspects of the US college application process.",
-						"projectPagePath": "/projects/whyu",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "video0302",
-								"text": "WhyUEdu Series Excerpt 1 on Vimeo",
-								"icon": "video",
-								"path": "http://www.vimeo.com/128663374/341f06632a"
-							},
-							{
-								"isInternalLink": false,
-								"id": "video0303",
-								"text": "WhyUEdu Series Excerpt 2 on Vimeo",
-								"icon": "video",
-								"path": "http://www.vimeo.com/128663372/553014bdd5"
-							},
-							{
-								"isInternalLink": false,
-								"id": "video0304",
-								"text": "WhyUEdu Series Worksheet PDF",
-								"icon": "document",
-								"path": "./assets/documents/Why+Essay+Planning+Worksheet.pdf"
-							}
-						]
-					},
-					{
-						"id": "video04",
-						"title": "Bodegas Saludables",
-						"icon": "./assets/images/homepageIcons/homepage-icon-lmhtf.svg",
-						"iconAlt": "",
-						"description": "Video explaining a community research partner's public health program.",
-						"projectPagePath": "/projects/lmhtf",
-						"links": [
-							{
-								"isInternalLink": false,
-								"id": "health0402",
-								"text": "'Bodegas Saludables'excerpt on Vimeo",
-								"icon": "video",
-								"path": "http://www.vimeo.com/231980215"
-							}
-						]
-					}
-				]
-			},
-			{
-				"title": "Art In Person",
+				"title": "Interactive Art",
 				"id": "artSection",
 				"projects": [
 					{
 						"id": "art01",
+						"title": "Abstract",
+						"description": "A livestream performance of my master's thesis, on public health communication.",
+						"icon": "./assets/images/homepageIcons/homepage-icon-abstract.svg",
+						"iconAlt": "'Abstract' logo: sparkle emoji.",
+						"projectPagePath": "/projects/abstract",
+						"links": [
+							{
+								"isInternalLink": false,
+								"id": "highlights0101",
+								"text": "'Abstract' Recording on Vimeo (No subtitles)",
+								"path": "https://vimeo.com/410859161",
+								"icon": "video"
+							},
+							{
+								"isInternalLink": false,
+								"id": "highlights0102",
+								"text": "'Abstact' interactive script (note: a11y issues)",
+								"path": "https://abstract-prod.herokuapp.com/",
+								"icon": "website"
+							},
+							{
+								"isInternalLink": false,
+								"id": "highlights0103",
+								"text": "Full Text of my Master's Thesis",
+								"path": "https://dspace.mit.edu/handle/1721.1/127452",
+								"icon": "document"
+							}
+						]
+					},
+					{
+						"id": "art02",
 						"title": "Weird Little Plays",
 						"icon": "./assets/images/homepageIcons/homepage-icon-plays.svg",
 						"iconAlt": "",
@@ -466,7 +358,7 @@ class HomePage extends Component {
 						"links": []
 					},
 					{
-						"id": "art02",
+						"id": "art03",
 						"title": "Connect the Dots!",
 						"icon": "./assets/images/homepageIcons/homepage-icon-dots.svg",
 						"iconAlt": "",
@@ -475,7 +367,7 @@ class HomePage extends Component {
 						"links": []
 					},
 					{
-						"id": "art03",
+						"id": "art04",
 						"title": "Walks Through Cambridge",
 						"icon": "./assets/images/homepageIcons/homepage-icon-walks.svg",
 						"iconAlt": " ",
